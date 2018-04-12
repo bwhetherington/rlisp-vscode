@@ -1,0 +1,48 @@
+{
+    "name": "rustlisp",
+    "displayName": "RustLisp Syntax Colorizer",
+    "description": "RustLisp Syntax Colorizer",
+    "version": "1.0.0",
+    "publisher": "Benjamin Hetherington",
+    "engines": {
+        "vscode": "^0.10.10"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "categories": [
+        "Languages"
+    ],
+    "keywords": [
+        "rustlisp"
+    ],
+    "galleryBanner": {
+        "color": "#A2A5FA",
+        "theme": "dark"
+    },
+    "icon": "icon.svg",
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/Dima4ka/vs-code-drracket-colorizer"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "rustlisp",
+                "aliases": [
+                    "Rust Lisp",
+                    "rustlisp"
+                ],
+                "extensions": [
+                    ".rl"
+                ],
+                "configuration": "./rustlisp.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "rustlisp",
+                "scopeName": "source.rustlisp",
+                "path": "./syntaxes/rustlisp.tmLanguage"
+            }
+        ]
+    }
+}
