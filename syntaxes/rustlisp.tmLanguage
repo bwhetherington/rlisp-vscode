@@ -145,7 +145,7 @@
 			<key>comment</key>
 			<string>control in the racket language</string>
 			<key>match</key>
-			<string>\b(if|else|cond|begin|match)\b((?!\S)|(?=(\)|\]|\})))</string>
+			<string>\b(if|else|cond|begin|match|when|unless)\b((?!\S)|(?=(\)|\]|\})))</string>
 			<key>name</key>
 			<string>keyword.control.rustlisp</string>
 		</dict>
