@@ -85,6 +85,134 @@
 			<key>name</key>
 			<string>constant.numeric.hexadecimal.rustlisp</string>
 		</dict>
+
+		
+		<dict>
+			<key>comment</key>
+			<string>general quaternion</string>
+			<key>match</key>
+			<string>(([0-9]*(\.[0-9]*)?)([+-]?[0-9]*(\.[0-9]*)?)i([+-]?[0-9]*(\.[0-9]*)?)j([+-]?[0-9]*(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>ab quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)([+-]?[0-9]+(\.[0-9]*)?)i)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>ac quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)([+-]?[0-9]+(\.[0-9]*)?)j)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>ad quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)([+-]?[0-9]+(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>bc quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)i([+-]?[0-9]+(\.[0-9]*)?)j)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>bd quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)i([+-]?[0-9]+(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>cd quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)j([+-]?[0-9]+(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>abc quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)([+-]?[0-9]+(\.[0-9]*)?)i([+-]?[0-9]*(\.[0-9]*)?)j)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>abd quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)([+-]?[0-9]+(\.[0-9]*)?)i([+-]?[0-9]*(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>acd quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)([+-]?[0-9]+(\.[0-9]*)?)j([+-]?[0-9]+(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>bcd quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)i([+-]?[0-9]+(\.[0-9]*)?)j([+-]?[0-9]+(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>b quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)i)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>c quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)j)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>d quaternion</string>
+			<key>match</key>
+			<string>(([+-]?[0-9]+(\.[0-9]*)?)k)</string>
+			<key>name</key>
+			<string>constant.numeric.quaternion.rustlisp</string>
+		</dict>
+
 		<dict>
 			<key>comment</key>
 			<string>extflonum</string>
@@ -137,7 +265,7 @@
 			<key>comment</key>
 			<string>syntax in the racket language</string>
 			<key>match</key>
-			<string>\b(define\-struct|define|let|set\!|import|true|false|empty|lambda)\b((?!\S)|(?=(\)|\]|\})))</string>
+			<string>\b(quote|quasiquote|unquote|λ|define\-struct|define|let|set\!|import|true|false|nil|empty|lambda)\b((?!\S)|(?=(\)|\]|\})))</string>
 			<key>name</key>
 			<string>keyword.rustlisp</string>
 		</dict>
@@ -145,7 +273,7 @@
 			<key>comment</key>
 			<string>control in the racket language</string>
 			<key>match</key>
-			<string>\b(if|else|cond|begin|match|when|unless)\b((?!\S)|(?=(\)|\]|\})))</string>
+			<string>\b(try|if|else|cond|begin|match|when|unless)\b((?!\S)|(?=(\)|\]|\})))</string>
 			<key>name</key>
 			<string>keyword.control.rustlisp</string>
 		</dict>
