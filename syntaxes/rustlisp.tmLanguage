@@ -265,7 +265,7 @@
 			<key>comment</key>
 			<string>syntax in the racket language</string>
 			<key>match</key>
-			<string>\b(quote|quasiquote|unquote|λ|define\-macro\-rule|define\-macro|define\-struct|define|let|set\!|import|true|false|nil|empty|lambda)\b((?!\S)|(?=(\)|\]|\})))</string>
+			<string>\b(quote|quasiquote|unquote|λ|define\-macro\-rule|define\-macro|define\-struct|define|let|set\!|true|false|nil|empty|lambda)\b((?!\S)|(?=(\)|\]|\})))</string>
 			<key>name</key>
 			<string>keyword.rustlisp</string>
 		</dict>
@@ -273,7 +273,7 @@
 			<key>comment</key>
 			<string>control in the racket language</string>
 			<key>match</key>
-			<string>\b(try|if|else|cond|begin|match|when|unless)\b((?!\S)|(?=(\)|\]|\})))</string>
+			<string>\b(import|try|if|else|cond|begin|match|when|unless)\b((?!\S)|(?=(\)|\]|\})))</string>
 			<key>name</key>
 			<string>keyword.control.rustlisp</string>
 		</dict>
